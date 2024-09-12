@@ -1,5 +1,6 @@
 @import url(//db.onlinewebfonts.com/c/415c1cffdc1ffdf955cdd328ad4a4c87?family=Cheltenham);
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 a {
   text-decoration: none;
@@ -514,3 +515,82 @@ body {
 }
 
 /* END NYT nav */
+
+/* START feedback form */
+
+.linkToFeedback {
+  display: flex;
+  justify-content: center;
+}
+
+.goToFormLink {
+  width: 100%;
+  background-color: #326891;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  border: solid 2px #326891;
+}
+
+.goToFormLink:hover {
+  background-color: white;
+  color: #326891;
+  border: solid 2px #326891;
+}
+
+#feedbackContainer {
+  align-self: flex-end;
+}
+
+.collapsible {
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: rgb(50, 104, 145);
+}
+
+.formContent {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #e6e6e6;
+}
+
+#feedbackForm {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 1rem;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#writtenComment {
+  height: 40px;
+}
+
+#submitForm {
+  margin: 25px 0 3px;
+  padding: 7px 0;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(86, 123, 149);
+  border: 1px outset rgb(50, 104, 145);
+  border-radius: 3px;
+}
+
+/* END feedback form */
